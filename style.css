@@ -410,6 +410,10 @@ body.rtl-mode .panel-details li {
   padding-right: 1.3rem;
 }
 
+body.rtl-mode .three-column-section .text-end {
+  text-align: right !important;
+}
+
 body.rtl-mode .panel-details li::before {
   left: auto;
   right: 0;
