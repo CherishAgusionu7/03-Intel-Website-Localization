@@ -154,7 +154,11 @@ const translationData = {
     consentText: 'I agree to receive Intel sustainability updates',
     subscribeButton: 'Subscribe',
     validationEmail: 'Please enter a valid email address',
-    validationConsent: 'You must agree before submitting'
+    validationConsent: 'You must agree before submitting',
+    footerCopyright: '© 2026 Intel Corporation. All rights reserved.',
+    footerPrivacy: 'Privacy Policy',
+    footerTerms: 'Terms of Use',
+    footerContact: 'Contact'
   },
   ar: {
     navImpact: 'التأثير',
@@ -229,7 +233,11 @@ const translationData = {
     consentText: 'أوافق على تلقي تحديثات استدامة إنتل',
     subscribeButton: 'اشترك',
     validationEmail: 'يرجى إدخال عنوان بريد إلكتروني صالح',
-    validationConsent: 'يجب أن توافق قبل الإرسال'
+    validationConsent: 'يجب أن توافق قبل الإرسال',
+    footerCopyright: '© 2026 شركة إنتل. جميع الحقوق محفوظة.',
+    footerPrivacy: 'سياسة الخصوصية',
+    footerTerms: 'شروط الاستخدام',
+    footerContact: 'اتصل بنا'
   },
   es: {
     navImpact: 'Impacto',
@@ -304,7 +312,11 @@ const translationData = {
     consentText: 'Acepto recibir actualizaciones de sostenibilidad de Intel',
     subscribeButton: 'Suscribirse',
     validationEmail: 'Por favor ingresa una dirección de correo electrónico válida',
-    validationConsent: 'Debes aceptar antes de enviar'
+    validationConsent: 'Debes aceptar antes de enviar',
+    footerCopyright: '© 2026 Intel Corporation. Todos los derechos reservados.',
+    footerPrivacy: 'Política de privacidad',
+    footerTerms: 'Términos de uso',
+    footerContact: 'Contacto'
   },
   fr: {
     navImpact: 'Impact',
@@ -379,7 +391,11 @@ const translationData = {
     consentText: 'J\'accepte de recevoir des mises à jour sur la durabilité d\'Intel',
     subscribeButton: 'S\'abonner',
     validationEmail: 'Veuillez entrer une adresse e-mail valide',
-    validationConsent: 'Vous devez accepter avant d\'envoyer'
+    validationConsent: 'Vous devez accepter avant d\'envoyer',
+    footerCopyright: '© 2026 Intel Corporation. Tous droits réservés.',
+    footerPrivacy: 'Politique de confidentialité',
+    footerTerms: 'Conditions d\'utilisation',
+    footerContact: 'Contact'
   }
 };
 
