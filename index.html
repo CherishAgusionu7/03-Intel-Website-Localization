@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="rtl">
+<html lang="en" dir="ltr">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -14,17 +14,18 @@
     <nav class="nav-bar" aria-label="Primary navigation">
       <span class="brand-logo">Intel</span>
       <div class="nav-actions">
-        <a class="nav-link" href="#dashboard">Impact</a>
-        <a class="nav-link" href="#future">Vision</a>
+        <a class="nav-link" href="#dashboard" data-i18n="navImpact">Impact</a>
+        <a class="nav-link" href="#future" data-i18n="navVision">Vision</a>
+        <button id="languageToggle" type="button" class="language-button" aria-live="polite" data-i18n="languageButton">English</button>
       </div>
     </nav>
 
     <div class="hero-panel reveal-on-scroll">
-      <p class="eyebrow">Innovation meets responsibility</p>
-      <h1>Building a Sustainable Digital Future</h1>
-      <p>Intel is transforming the future through climate action, renewable energy, water stewardship, and responsible innovation</p>
+      <p class="eyebrow" data-i18n="eyebrow">Innovation meets responsibility</p>
+      <h1 data-i18n="heroHeading">Building a Sustainable Digital Future</h1>
+      <p data-i18n="heroDescription">Intel is transforming the future through climate action, renewable energy, water stewardship, and responsible innovation</p>
       <div class="hero-actions">
-        <a href="#journey" class="cta-button" id="exploreTimeline">Enter the Journey</a>
+        <a href="#journey" class="cta-button" id="exploreTimeline" data-i18n="exploreJourney">Enter the Journey</a>
       </div>
     </div>
 
@@ -39,95 +40,95 @@
 
     <div class="scroll-hint">
       <span class="scroll-line"></span>
-      <span>Scroll to explore</span>
+      <span data-i18n="scrollHint">Scroll to explore</span>
     </div>
   </header>
 
   <main>
     <section class="story-section" id="journey">
       <div class="section-header reveal-on-scroll">
-        <span class="section-label">Sustainability story</span>
-        <h2>From ambition to action, each milestone is a chapter in Intel’s climate journey</h2>
+        <span class="section-label" data-i18n="storyLabel">Sustainability story</span>
+        <h2 data-i18n="storyHeading">From ambition to action, each milestone is a chapter in Intel’s climate journey</h2>
       </div>
 
       <div class="journey-track">
         <article class="story-panel panel-hero reveal-on-scroll">
           <div class="panel-copy">
-            <p class="panel-tag">2030 · Net Zero Carbon</p>
-            <h2>Net-zero emissions powered by smarter operations</h2>
-            <p>Intel commits to net-zero Scope 1 and 2 emissions by optimizing energy, manufacturing, and renewable sourcing across every facility.</p>
+            <p class="panel-tag" data-i18n="panel1Tag">2030 · Net Zero Carbon</p>
+            <h2 data-i18n="panel1Heading">Net-zero emissions powered by smarter operations</h2>
+            <p data-i18n="panel1Description">Intel commits to net-zero Scope 1 and 2 emissions by optimizing energy, manufacturing, and renewable sourcing across every facility.</p>
             <ul class="panel-details">
-              <li>Smart factory systems with predictive efficiency</li>
-              <li>Renewable electricity expanded across global operations</li>
-              <li>Clean energy atmosphere with lower carbon intensity</li>
+              <li data-i18n="panel1Detail1">Smart factory systems with predictive efficiency</li>
+              <li data-i18n="panel1Detail2">Renewable electricity expanded across global operations</li>
+              <li data-i18n="panel1Detail3">Clean energy atmosphere with lower carbon intensity</li>
             </ul>
           </div>
           <div class="panel-visual" aria-hidden="true">
-            <img src="5.jpg" alt="Net Zero Carbon" />
+            <img src="5.jpg" data-i18n-alt="altPanel1" alt="Net Zero Carbon" />
           </div>
         </article>
 
         <article class="story-panel panel-alt reveal-on-scroll">
           <div class="panel-copy">
-            <p class="panel-tag">2030 · Water Impact</p>
-            <h2>Restoring water with digital precision</h2>
-            <p>Intel restores more freshwater than it consumes in water-stressed regions through advanced recycling, conservation, and water-smart manufacturing.</p>
+            <p class="panel-tag" data-i18n="panel2Tag">2030 · Water Impact</p>
+            <h2 data-i18n="panel2Heading">Restoring water with digital precision</h2>
+            <p data-i18n="panel2Description">Intel restores more freshwater than it consumes in water-stressed regions through advanced recycling, conservation, and water-smart manufacturing.</p>
             <ul class="panel-details">
-              <li>Closed-loop water systems for fabs</li>
-              <li>Smart metrics for regional restoration</li>
-              <li>Digital circuits guiding water flow</li>
+              <li data-i18n="panel2Detail1">Closed-loop water systems for fabs</li>
+              <li data-i18n="panel2Detail2">Smart metrics for regional restoration</li>
+              <li data-i18n="panel2Detail3">Digital circuits guiding water flow</li>
             </ul>
           </div>
           <div class="panel-visual" aria-hidden="true">
-            <img src="6.jpg" alt="Water Impact" />
+            <img src="6.jpg" data-i18n-alt="altPanel2" alt="Water Impact" />
           </div>
         </article>
 
         <article class="story-panel panel-hero reveal-on-scroll">
           <div class="panel-copy">
-            <p class="panel-tag">2030 · Zero Waste</p>
-            <h2>Closing loops with a circular economy mindset</h2>
-            <p>Intel reduces landfill waste by designing systems, materials, and logistics that keep products and materials in circulation.</p>
+            <p class="panel-tag" data-i18n="panel3Tag">2030 · Zero Waste</p>
+            <h2 data-i18n="panel3Heading">Closing loops with a circular economy mindset</h2>
+            <p data-i18n="panel3Description">Intel reduces landfill waste by designing systems, materials, and logistics that keep products and materials in circulation.</p>
             <ul class="panel-details">
-              <li>Recycling loops enabled by smart tracking</li>
-              <li>Waste-to-resource innovation across fabs</li>
-              <li>Materials recovery embedded into operations</li>
+              <li data-i18n="panel3Detail1">Recycling loops enabled by smart tracking</li>
+              <li data-i18n="panel3Detail2">Waste-to-resource innovation across fabs</li>
+              <li data-i18n="panel3Detail3">Materials recovery embedded into operations</li>
             </ul>
           </div>
           <div class="panel-visual" aria-hidden="true">
-            <img src="7.jpg" alt="Zero Waste innovation" />
+            <img src="7.jpg" data-i18n-alt="altPanel3" alt="Zero Waste innovation" />
           </div>
         </article>
 
         <article class="story-panel panel-alt reveal-on-scroll">
           <div class="panel-copy">
-            <p class="panel-tag">2030 · Renewable Electricity</p>
-            <h2>Fueling innovation with 100% renewable power</h2>
-            <p>Intel accelerates renewable energy use through large-scale sourcing, grid partnerships, and clean energy investments across its global sites.</p>
+            <p class="panel-tag" data-i18n="panel4Tag">2030 · Renewable Electricity</p>
+            <h2 data-i18n="panel4Heading">Fueling innovation with 100% renewable power</h2>
+            <p data-i18n="panel4Description">Intel accelerates renewable energy use through large-scale sourcing, grid partnerships, and clean energy investments across its global sites.</p>
             <ul class="panel-details">
-              <li>Solar and wind networks powering operations</li>
-              <li>Energy grid intelligence to optimize delivery</li>
-              <li>Cleaner power with a glowing, low-carbon future</li>
+              <li data-i18n="panel4Detail1">Solar and wind networks powering operations</li>
+              <li data-i18n="panel4Detail2">Energy grid intelligence to optimize delivery</li>
+              <li data-i18n="panel4Detail3">Cleaner power with a glowing, low-carbon future</li>
             </ul>
           </div>
           <div class="panel-visual" aria-hidden="true">
-            <img src="8.jpg" alt="Renewable electricity" />
+            <img src="8.jpg" data-i18n-alt="altPanel4" alt="Renewable electricity" />
           </div>
         </article>
 
         <article class="story-panel panel-hero reveal-on-scroll">
           <div class="panel-copy">
-            <p class="panel-tag">2040 · Supply Chain Decarbonization</p>
-            <h2>Building a low-carbon network of sustainable partners</h2>
-            <p>Intel drives emissions reduction across its supply chain through digital collaboration, low-carbon materials, and shared climate action.</p>
+            <p class="panel-tag" data-i18n="panel5Tag">2040 · Supply Chain Decarbonization</p>
+            <h2 data-i18n="panel5Heading">Building a low-carbon network of sustainable partners</h2>
+            <p data-i18n="panel5Description">Intel drives emissions reduction across its supply chain through digital collaboration, low-carbon materials, and shared climate action.</p>
             <ul class="panel-details">
-              <li>Connected supplier network with carbon signals</li>
-              <li>Global logistics designed for sustainability</li>
-              <li>Decarbonization as a collaborative platform</li>
+              <li data-i18n="panel5Detail1">Connected supplier network with carbon signals</li>
+              <li data-i18n="panel5Detail2">Global logistics designed for sustainability</li>
+              <li data-i18n="panel5Detail3">Decarbonization as a collaborative platform</li>
             </ul>
           </div>
           <div class="panel-visual" aria-hidden="true">
-            <img src="9.jpg" alt="Supply Chain Decarbonization" />
+            <img src="9.jpg" data-i18n-alt="altPanel5" alt="Supply Chain Decarbonization" />
           </div>
         </article>
       </div>
@@ -136,17 +137,17 @@
     <section class="three-column-section py-5" id="features">
       <div class="container">
         <div class="section-header mb-4 reveal-on-scroll">
-          <span class="section-label">Highlights</span>
-          <h2 class="h3">Key focus areas driving sustainable impact</h2>
+          <span class="section-label" data-i18n="highlightsLabel">Highlights</span>
+          <h2 class="h3" data-i18n="highlightsHeading">Key focus areas driving sustainable impact</h2>
         </div>
 
         <div class="row g-4">
           <div class="col-12 col-md-6 col-lg-4">
             <div class="card h-100 text-end">
               <div class="card-body">
-                <h3 class="card-title h5">Energy Innovation</h3>
-                <p class="card-text">Scaling renewable energy and grid partnerships to power operations with low-carbon electricity</p>
-                <a href="#energy" class="btn btn-primary">Learn more</a>
+                <h3 class="card-title h5" data-i18n="card1Title">Energy Innovation</h3>
+                <p class="card-text" data-i18n="card1Text">Scaling renewable energy and grid partnerships to power operations with low-carbon electricity</p>
+                <a href="#energy" class="btn btn-primary" data-i18n="cardButton">Learn more</a>
               </div>
             </div>
           </div>
@@ -154,9 +155,9 @@
           <div class="col-12 col-md-6 col-lg-4">
             <div class="card h-100 text-end">
               <div class="card-body">
-                <h3 class="card-title h5">Water Stewardship</h3>
-                <p class="card-text">Restoring and conserving freshwater through closed-loop systems and smart recycling</p>
-                <a href="#water" class="btn btn-primary">Learn more</a>
+                <h3 class="card-title h5" data-i18n="card2Title">Water Stewardship</h3>
+                <p class="card-text" data-i18n="card2Text">Restoring and conserving freshwater through closed-loop systems and smart recycling</p>
+                <a href="#water" class="btn btn-primary" data-i18n="cardButton">Learn more</a>
               </div>
             </div>
           </div>
@@ -164,9 +165,9 @@
           <div class="col-12 col-md-6 col-lg-4">
             <div class="card h-100 text-end">
               <div class="card-body">
-                <h3 class="card-title h5">Circular Materials</h3>
-                <p class="card-text">Designing products and logistics to keep materials in use and out of landfills</p>
-                <a href="#circular" class="btn btn-primary">Learn more</a>
+                <h3 class="card-title h5" data-i18n="card3Title">Circular Materials</h3>
+                <p class="card-text" data-i18n="card3Text">Designing products and logistics to keep materials in use and out of landfills</p>
+                <a href="#circular" class="btn btn-primary" data-i18n="cardButton">Learn more</a>
               </div>
             </div>
           </div>
@@ -176,25 +177,25 @@
 
     <section class="impact-dashboard section-glow" id="dashboard">
       <div class="dashboard-header reveal-on-scroll">
-        <span class="section-label">Impact dashboard</span>
-        <h2>Measurable progress in every dimension of sustainability</h2>
+        <span class="section-label" data-i18n="dashboardLabel">Impact dashboard</span>
+        <h2 data-i18n="dashboardHeading">Measurable progress in every dimension of sustainability</h2>
       </div>
       <div class="dashboard-grid">
         <div class="counter-card reveal-on-scroll">
           <span class="counter-number" data-target="100">0</span>
-          <p>Renewable energy usage</p>
+          <p data-i18n="counter1Description">Renewable energy usage</p>
         </div>
         <div class="counter-card reveal-on-scroll">
           <span class="counter-number" data-target="2030">0</span>
-          <p>Net-zero goal year</p>
+          <p data-i18n="counter2Description">Net-zero goal year</p>
         </div>
         <div class="counter-card reveal-on-scroll">
           <span class="counter-number" data-target="500">0</span>
-          <p>Million gallons of water restored</p>
+          <p data-i18n="counter3Description">Million gallons of water restored</p>
         </div>
         <div class="counter-card reveal-on-scroll">
           <span class="counter-number" data-target="90">0</span>
-          <p>Waste diversion across operations</p>
+          <p data-i18n="counter4Description">Waste diversion across operations</p>
         </div>
       </div>
     </section>
@@ -202,9 +203,9 @@
     <section class="future-vision section-glow" id="future">
       <div class="vision-background"></div>
       <div class="vision-copy reveal-on-scroll">
-        <span class="section-label">Future vision</span>
-        <h2>The next generation of technology must be sustainable by design</h2>
-        <p>Intel is building the infrastructure, partnerships, and ethical innovation that power tomorrow’s responsible digital ecosystem</p>
+        <span class="section-label" data-i18n="futureLabel">Future vision</span>
+        <h2 data-i18n="futureHeading">The next generation of technology must be sustainable by design</h2>
+        <p data-i18n="futureDescription">Intel is building the infrastructure, partnerships, and ethical innovation that power tomorrow’s responsible digital ecosystem</p>
       </div>
     </section>
     <section class="subscribe-section section-glow py-5" id="subscribe">
@@ -212,27 +213,27 @@
         <div class="row justify-content-center">
           <div class="col-md-8 col-lg-6">
             <div class="card p-4 text-end">
-              <h3 class="card-title mb-2">Subscribe to Intel’s Sustainability Newsletter</h3>
-              <p class="card-text mb-3">Get updates on climate action, renewable energy, and responsible innovation</p>
+              <h3 class="card-title mb-2" data-i18n="subscribeTitle">Subscribe to Intel’s Sustainability Newsletter</h3>
+              <p class="card-text mb-3" data-i18n="subscribeText">Get updates on climate action, renewable energy, and responsible innovation</p>
               <form id="subscribeForm" action="#" method="post" class="row g-2 needs-validation" novalidate>
                 <div class="col-12">
-                  <label for="subscriberName" class="form-label visually-hidden">Name</label>
-                  <input type="text" class="form-control" id="subscriberName" name="name" placeholder="Your name" required>
+                  <label for="subscriberName" class="form-label visually-hidden" data-i18n="subscribeNameLabel">Name</label>
+                  <input type="text" class="form-control" id="subscriberName" name="name" placeholder="Your name" data-i18n-placeholder="subscribeName" required>
                 </div>
                 <div class="col-12">
-                  <label for="subscriberEmail" class="form-label visually-hidden">Email address</label>
-                  <input type="email" class="form-control" id="subscriberEmail" name="email" placeholder="Email address" required>
-                  <div class="invalid-feedback">Please enter a valid email address</div>
+                  <label for="subscriberEmail" class="form-label visually-hidden" data-i18n="subscribeEmailLabel">Email address</label>
+                  <input type="email" class="form-control" id="subscriberEmail" name="email" placeholder="Email address" data-i18n-placeholder="subscribeEmail" required>
+                  <div class="invalid-feedback" data-i18n="validationEmail">Please enter a valid email address</div>
                 </div>
                 <div class="col-12">
                   <div class="form-check">
                     <input class="form-check-input" type="checkbox" value="" id="consentCheck" required>
-                    <label class="form-check-label" for="consentCheck">I agree to receive Intel sustainability updates</label>
-                    <div class="invalid-feedback">You must agree before submitting</div>
+                    <label class="form-check-label" for="consentCheck" data-i18n="consentText">I agree to receive Intel sustainability updates</label>
+                    <div class="invalid-feedback" data-i18n="validationConsent">You must agree before submitting</div>
                   </div>
                 </div>
                 <div class="col-12 text-start">
-                  <button type="submit" class="btn btn-primary">Subscribe</button>
+                  <button type="submit" class="btn btn-primary" data-i18n="subscribeButton">Subscribe</button>
                 </div>
               </form>
             </div>

@@ -61,7 +61,8 @@ svg {
 
 .nav-actions {
   display: flex;
-  gap: 1.2rem;
+  gap: 1rem;
+  align-items: center;
 }
 
 .nav-link {
@@ -70,6 +71,29 @@ svg {
   text-transform: uppercase;
   letter-spacing: 0.18em;
   transition: color 200ms ease;
+}
+
+.language-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 120px;
+  padding: 0.9rem 1rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: rgba(255, 255, 255, 0.06);
+  color: var(--text-light);
+  font-size: 0.95rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  transition: transform 200ms ease, background 200ms ease, border-color 200ms ease;
+}
+
+.language-button:hover,
+.language-button:focus-visible {
+  transform: translateY(-1px);
+  background: rgba(0, 174, 239, 0.16);
+  border-color: rgba(0, 174, 239, 0.6);
 }
 
 .nav-link:hover,
