@@ -31,6 +31,12 @@ body {
 html[dir="rtl"],
 body.rtl-mode {
   direction: rtl;
+  unicode-bidi: embed;
+}
+
+body.rtl-mode,
+html[dir="rtl"] body {
+  text-align: right;
 }
 
 button,
@@ -218,6 +224,38 @@ svg {
   filter: blur(10px);
 }
 
+body.rtl-mode .hero-illustration .orb {
+  right: auto;
+  left: 14%;
+}
+
+body.rtl-mode .hero-illustration .line-a {
+  left: auto;
+  right: 12%;
+  transform: rotate(-18deg);
+}
+
+body.rtl-mode .hero-illustration .line-b {
+  right: auto;
+  left: 18%;
+  transform: rotate(22deg);
+}
+
+body.rtl-mode .hero-illustration .node-a {
+  left: auto;
+  right: 10%;
+}
+
+body.rtl-mode .hero-illustration .node-b {
+  right: auto;
+  left: 16%;
+}
+
+body.rtl-mode .hero-illustration .node-c {
+  left: auto;
+  right: 35%;
+}
+
 .network-line,
 .network-node {
   position: absolute;
@@ -352,6 +390,29 @@ svg {
   grid-template-columns: 1fr 0.95fr;
   align-items: center;
   gap: 2rem;
+}
+
+body.rtl-mode .story-panel {
+  direction: rtl;
+}
+
+body.rtl-mode .story-panel .panel-copy {
+  grid-column: 2;
+  text-align: right;
+}
+
+body.rtl-mode .story-panel .panel-visual {
+  grid-column: 1;
+}
+
+body.rtl-mode .panel-details li {
+  padding-left: 0;
+  padding-right: 1.3rem;
+}
+
+body.rtl-mode .panel-details li::before {
+  left: auto;
+  right: 0;
 }
 
 .story-panel::before {
@@ -626,6 +687,10 @@ svg {
   max-width: 760px;
   margin: 0 auto 2.5rem;
   text-align: center;
+}
+
+body.rtl-mode .text-end {
+  text-align: right !important;
 }
 
 .dashboard-header h2 {
