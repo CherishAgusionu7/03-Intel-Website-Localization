@@ -491,6 +491,16 @@ function applyPageDirection() {
     html.classList.toggle('rtl-mode', direction === 'rtl');
     body.classList.toggle('rtl-mode', direction === 'rtl');
   }
+
+  // Ensure the correct Bootstrap stylesheet is loaded for RTL vs LTR
+  const bootstrapLink = document.getElementById('bootstrapCss');
+  if (bootstrapLink) {
+    const base = 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/';
+    const desired = direction === 'rtl' ? base + 'bootstrap.rtl.min.css' : base + 'bootstrap.min.css';
+    if (bootstrapLink.href !== desired) {
+      bootstrapLink.href = desired;
+    }
+  }
 }
 
 function watchForLanguageChanges() {
