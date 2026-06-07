@@ -67,3 +67,70 @@ const dashboard = document.getElementById('dashboard');
 if (dashboard) {
   counterObserver.observe(dashboard);
 }
+
+const rtlLanguageCodes = new Set([
+  'ar', 'he', 'fa', 'ur', 'ps', 'ku', 'sd', 'ug', 'yi', 'dv'
+]);
+
+const rtlCharRegex = /[\u0590-\u05FF\u0600-\u06FF\u0750-\u077F\u08A0-\u08FF\uFB50-\uFDFF\uFE70-\uFEFF]/;
+
+function getPrimaryLanguage(langValue) {
+  if (!langValue) return '';
+  return langValue.split('-')[0].toLowerCase();
+}
+
+function isRtlLanguageCode(langValue) {
+  const primary = getPrimaryLanguage(langValue);
+  return rtlLanguageCodes.has(primary);
+}
+
+function inferDirectionFromText(text) {
+  if (!text) return 'ltr';
+  return rtlCharRegex.test(text) ? 'rtl' : 'ltr';
+}
+
+function getVisibleTextSample() {
+  const text = (document.body.innerText || document.body.textContent || '').trim();
+  return text.replace(/\s+/g, ' ').slice(0, 250);
+}
+
+function detectPageDirection() {
+  const htmlLang = document.documentElement.lang || document.documentElement.getAttribute('lang');
+  const bodyLang = document.body.lang || document.body.getAttribute('lang');
+  if (isRtlLanguageCode(htmlLang || bodyLang)) {
+    return 'rtl';
+  }
+
+  const sample = getVisibleTextSample();
+  return inferDirectionFromText(sample);
+}
+
+function applyPageDirection() {
+  const direction = detectPageDirection();
+  const html = document.documentElement;
+  const body = document.body;
+  if (html.dir !== direction) {
+    html.dir = direction;
+    body.dir = direction;
+    html.classList.toggle('rtl-mode', direction === 'rtl');
+  }
+}
+
+function watchForLanguageChanges() {
+  const observer = new MutationObserver(() => applyPageDirection());
+  observer.observe(document.documentElement, {
+    attributes: true,
+    attributeFilter: ['lang', 'dir']
+  });
+  observer.observe(document.body, {
+    attributes: true,
+    attributeFilter: ['lang', 'dir'],
+    childList: true,
+    subtree: true
+  });
+
+  setInterval(applyPageDirection, 1800);
+}
+
+applyPageDirection();
+watchForLanguageChanges();
