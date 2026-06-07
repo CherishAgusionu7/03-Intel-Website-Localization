@@ -464,11 +464,17 @@ function getVisibleTextSample() {
   return text.replace(/\s+/g, ' ').slice(0, 250);
 }
 
+function getDirectionFromLanguage(langValue) {
+  if (!langValue) return 'ltr';
+  return isRtlLanguageCode(langValue) ? 'rtl' : 'ltr';
+}
+
 function detectPageDirection() {
   const htmlLang = document.documentElement.lang || document.documentElement.getAttribute('lang');
   const bodyLang = document.body.lang || document.body.getAttribute('lang');
-  if (isRtlLanguageCode(htmlLang || bodyLang)) {
-    return 'rtl';
+  const lang = htmlLang || bodyLang;
+  if (lang) {
+    return getDirectionFromLanguage(lang);
   }
 
   const sample = getVisibleTextSample();
@@ -479,10 +485,11 @@ function applyPageDirection() {
   const direction = detectPageDirection();
   const html = document.documentElement;
   const body = document.body;
-  if (html.dir !== direction) {
+  if (html.dir !== direction || body.dir !== direction) {
     html.dir = direction;
     body.dir = direction;
     html.classList.toggle('rtl-mode', direction === 'rtl');
+    body.classList.toggle('rtl-mode', direction === 'rtl');
   }
 }
 

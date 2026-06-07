@@ -28,6 +28,11 @@ body {
   overflow-x: hidden;
 }
 
+html[dir="rtl"],
+body.rtl-mode {
+  direction: rtl;
+}
+
 button,
 a {
   cursor: pointer;
