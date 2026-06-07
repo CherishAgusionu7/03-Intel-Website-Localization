@@ -410,8 +410,14 @@ body.rtl-mode .panel-details li {
   padding-right: 1.3rem;
 }
 
-body.rtl-mode .three-column-section .text-end {
+body.rtl-mode .three-column-section .text-end,
+body.rtl-mode .three-column-section .card-body {
   text-align: right !important;
+  direction: rtl !important;
+}
+
+body.rtl-mode .three-column-section .card-body .btn {
+  float: right;
 }
 
 body.rtl-mode .panel-details li::before {
